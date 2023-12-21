@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title>Главная</title>
+  <link rel="stylesheet" href="../Site_Лебедева Т.Р/CSS/style.css">
+  <style>
+    .itcss__items {
+      counter-reset: slide;
+    }
+    .itcss__item {
+      counter-increment: slide;
+    }
+    .itcss__item>div::before {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+  
+  <script defer src="../Site_Лебедева Т.Р/js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new ItcSimpleSlider('.itcss', {
+        loop: false,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="top-1">
+        <dt><a href="#obomne">Обо мне</a></dt>
+        <dt><a href="#portfolio">Портфолио</a></dt>
+        <dt><a href="#prais">Прайс</a></dt>
+        <dt><a href="#kontakt">Контакты</a></dt>
+      </div>
+
+      <div class="top-w-1">
+        <div class="fut"> 
+          <div class="kartin">
+        <h1>Фотограф</h1> 
+        <br>
+        <h1>Марта Мартынова</h1> 
+        </div>        
+        </div>
+        </div>
+    </div>
+    </header>
+    
+  <main>
+    <div class="contain">
+      <h5><a name="obomne" style="margin-left: 580px;"></a>Обо мне</h5>
+      <div class="nach">
+        <h3>Меня зовут Марта Мартынова и я родилась 
+          в марте. 
+          <br><br>
+          Я из Севастополя, где сейчас и нахожусь, но частенько бываю в Москве, потому что там мой универ. Учусь на 6 курсе в Московском Политехе на оформителя печатной продукции.
+          <br><br>
+          Параллельно с обучением на художника, начала заниматься фотографией и продолжаю фотографировать уже 5 лет. 
+          <br><br>
+          Я снимаю индивидуальные и семейные фотосеты,
+          а ещё лавстори. На каждой съёмке стремлюсь
+          к эмоциональным и естественным кадрам.</h3>
+          <img src="../Site_Лебедева Т.Р/ima/Group_34.png" alt="" style="margin-left: 580px;">
+      </div>
+      <div class="min">
+        <h5><a name="portfolio" style="margin-left: 80px;"></a>Портфолио
+          <br>
+          <a href="https://vk.com/martynova_marta" style="margin-left: 80px; margin-top: 100px;">Посмотреть работы</a></h5>
+        
+      </div>
+      <div class="min1">
+          <h5><a name="prais" style="margin-left: 80px;"></a>Прайс</h5>
+      </div>
+
+        <div class="itcss">
+          <div class="itcss__wrapper">
+            <div class="itcss__items">
+              <div class="itcss__item">
+                <img alt="" height="580" src="../Site_Лебедева Т.Р/ima/Group 23.png">
+              </div>
+              <div class="itcss__item">
+                <img alt="" height="580"src="../Site_Лебедева Т.Р/ima/Group 26.png">
+              </div>
+              <div class="itcss__item">
+                <img alt="" height="580" src="../Site_Лебедева Т.Р/ima/Group 24.png">
+              </div>
+            </div>
+          </div>
+          <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+          <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+        </div>     
+
+      <div class="row2">
+          <h5 style="margin-top: 80px;"><a name="kontakt" style="margin-left: 80px;" ></a>Контакты</h5>
+      </div>
+    <div class="cont2">
+      <div class="textcont">
+        <h2>Оставьте свои данные и я свяжусь <br>с вами, для обсуждения деталей
+        <br>
+        <br>
+        <br>
+        Написать лично можно <br>в социальных сетях</h2>
+      </div>
+      <div class="content">
+        <form action="#" name="form">
+          <div class="input-box" style="width: 400px;">
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              id="name"
+              data-reg="^[А-ЯЁ][а-яё]*$"
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Введите телефон"
+              name="phone"
+              id="phone"
+              data-reg="^((\+7|7|8)+([0-9]){10})$"
+            />
+          </div>
+          <div class="input-box message-box">
+            <textarea placeholder="Сообщение"></textarea>
+          </div>
+          <div class="button">
+            <input type="submit" id="button" value="Отправить" />
+          </div>
+        </form>
+      </div>
+    
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="pod2">
+      <a href="https://pd.rkn.gov.ru/docs/Uvedomlenie_ob_obrabotke.pdf" ><p>Согласие на обработку персональных данных
+        <br>
+      </p></a>
+    </div>
+      <div class="pod1">
+      <a href="https://vk.com/marta_martynova"><img src="../Site_Лебедева Т.Р/ima/uil_vk.png" alt="" style="margin-right: 25px;"/></a>
+      <a href="https://www.behance.net/vfyz10kzkzcc4e"><img src="../Site_Лебедева Т.Р/ima/ic_baseline-telegram.png" alt="" style="margin-right: 25px;"/></a>
+      <a href="https://instagram.com/mart_martynova?igshid=OGQ5ZDc2ODk2ZA=="><img src="../Site_Лебедева Т.Р/ima/ri_instagram-fill.png" alt=""/></a>    </div>
+      </div>
+    </footer>
+    <script src="../Site_Лебедева Т.Р/js/app.js"></script>
+
+</body>
+
+</html>
